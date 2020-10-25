@@ -1,0 +1,417 @@
+/* dibuat oleh Elsen Chandra dengan nim 2201738182 */
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../Assets/background.png");
+  background-size:cover;
+  margin: 0 0 ;
+  padding: 0 0;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* header */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav{
+  background-color: #a79191;
+  height: 100 px;
+  width: 100%;
+}
+
+label.logo img{
+  width: 90px;
+  height: 90px;
+  
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background-color: rgb(218, 82, 82);
+  transition: 0.3s;
+}
+
+.menubtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 800px){
+  label.logo img{
+    width: 70px;
+    height: 70px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px){
+  .menubtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #635d5d;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .0.3s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: rgb(218, 82, 82);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*end header*/
+
+/* slider */
+.sliderbox{
+  background-color: rgba(231, 135, 25, 0.651);
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.sliderbox .slide img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 700px;
+  height: 500px;
+  
+}
+
+#slider {
+  width: 720px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slider .slides {
+  display: block;
+  width: 6000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height: 400px;
+}
+
+
+/*end slider */
+
+/* prologue */
+.prologue{
+  background-color: rgba(214, 84, 75, 0.89);
+  width: 100%;
+  padding: 2em;
+  display: inline-flex;
+}
+
+.prologue .story{
+  float: left;
+  width: 30%;
+}
+
+.prologue .art{
+  display: flex;
+  padding-left: 100px;
+  float: right;
+  width: 70%;
+}
+
+.prologue .art img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* end prologue */
+
+/* count down  release*/
+.release{
+  background-color: rgba(226, 101, 63, 0.925);
+}
+
+.release h1{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.release p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+  padding-bottom: 40px;
+}
+
+/* end count down release */
+
+/* footer */
+.footer{
+  background-color: #a79191;
+}
+
+.footer .logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  width: 50px;
+  height: 50px;
+
+}
+
+
+.footer h4{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 15px;
+}
+
+
+.footer-social-icons {
+  width: 350px;
+  display:block;
+  margin: 0 auto;
+}
+.social-icon {
+  color: #000;
+}
+.social-icon.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-title {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+/* end footer */
+
+
+/* galleries */
+.gallerybox{
+  background-color: rgba(255, 255, 255, 0.555);
+  display: inline-block;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* end galleries */
+
+/* character */
+.characterbox{
+  padding-top: 5px;
+  background-color:rgba(243, 252, 252, 0.863);
+  display: inline-block;
+  padding-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.characterbox .name{
+  float: right;
+  width: 70%;
+  text-align: justify;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#storybox{
+  border-radius: 5px;
+  background: rgba(206, 195, 195, 0.877);
+
+}
+
+.characterbox .sprite{
+  display: flex;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  float: left;
+  width: 30%;
+}
+
+.characterbox .sprite img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* end character */
+
+/* lore */
+
+.lorebox{
+  width: 100%;
+  background-color: rgba(175, 171, 171, 0.884);
+  border-radius: 2px;
+  padding: 3em 2em;
+}
+
+.lorebox h1{
+  text-align: center;
+  font-family: monospace;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.lorebox p{
+  text-align: justify;
+  
+}
+
+.lorebox h2{
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+}
+
+/* end lore */
+
+/* register */
+.regisbox{
+  width: 100%;
+  background-color: rgba(165, 132, 124, 0.89);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+
+
+
+.regisbox h2{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  border-radius: 3px;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.regisbox .input{
+  padding: 15px;
+}
+
+/* end register */
+
